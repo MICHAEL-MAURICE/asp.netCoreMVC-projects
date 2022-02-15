@@ -1,0 +1,28 @@
+﻿@using day2.ViewModel
+
+@model TranieeStudentDegree
+
+
+<div class="card" style="width: 18rem;">
+  
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">name: @Model.Trename</li>
+    <li class="list-group-item">Degree: @Model.Degree</li>
+    @if (@Model.Status)
+            {
+                <li class="list-group-item bg-success"> Pass </li>
+            }
+            else
+            {
+                <li class="list-group-item bg-danger">Fail</li>
+            }
+            <li class="list-group-item">
+        <a href="http://localhost:55420/Co/Index" class="card-link btn btn-primary">back</a>
+        
+    
+    
+    </li>
+  </ul>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+﻿@model List<Instuctor>
+
+
+    @foreach (var item in Model){
+
+
+    <div class="card  mt-2" >
+  
+  <div class="card-body text-center">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Id: @item.Id</li>
+    <li class="list-group-item">Name: @item.Name</li>
+    <li class="list-group-item">Adress: @item.Address</li>
+    <li class="list-group-item">
+        <a href="http://localhost:55420/Co/Detials/@item.Id"
+        class="card-link btn btn-primary">Details</a>
+        <a href="http://localhost:55420/Co/Update_ins/@item.Id"
+        class="card-link btn btn-primary">Update</a>
+        
+         <a href="http://localhost:55420/Co/Delete/@item.Id"
+        class="card-link btn btn-danger">Delete</a>
+    </li>
+  </ul>
+  </div>
+</div>
+
+
+}
+<a href="http://localhost:55420/Co/Add_ins"
+        class="card-link btn alert-primary w-100">Add</a>
+

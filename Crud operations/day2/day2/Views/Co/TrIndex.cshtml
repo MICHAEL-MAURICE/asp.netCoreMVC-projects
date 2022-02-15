@@ -1,0 +1,30 @@
+﻿@using day2.ViewModel
+
+@model List<TranieeStudentDegree>
+
+    <h1>  sfjasdjpojdfpoajofpdsjjpfojdpjjf</h1>
+ @foreach (var item in Model){
+
+    <div class="card text-center mt-2 ">
+  
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">name: @item.Trename</li>
+    <li class="list-group-item">Degrww: @item.Degree</li>
+     @if (@item.Status)
+            {
+                <li class="list-group-item bg-success"> Pass </li>
+            }
+            else
+            {
+                <li class="list-group-item bg-danger">Fail</li>
+            }
+    <li class="list-group-item">
+        
+        
+    </li>
+  </ul>
+  </div>
+</div>
+ }
+
