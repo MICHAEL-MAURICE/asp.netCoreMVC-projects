@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Custom_User_Management-41B14819-36F1-4A7E-B9C3-03FF69A1D093")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Custom User Management")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
